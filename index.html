@@ -3,7 +3,7 @@
 <head>
 	<title>Courses</title>
 	<style>
-  *{
+	*{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
@@ -160,6 +160,120 @@ h1:hover{
 
 
 
+header
+{
+	width: 100%;
+	top:0;
+    position: fixed;
+    padding-top: 10px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    z-index: 5;
+}
+header img
+{
+    width: 40px;
+    margin-right: 20px;
+}
+header .part
+{
+    margin-left: 5vw;
+}
+header .search .box
+{
+    box-sizing: content-box;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    display: flex;
+}
+header .search img
+{
+    width: 25px;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+header .search .box input
+{
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    background-color: rgba(0,0,0,0);
+}
+header .kinds
+{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+header .kinds .list {
+    margin-right: 3vw;
+}
+    header .kinds .list .dropItems .arrow
+{
+    top: -5px;
+    position: absolute;
+    width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid #333;
+}
+header .kinds .list:hover h3 {
+    border-bottom: 3px solid #ffde00;
+}
+header .kinds .list .dropItems 
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 5px;
+    opacity: 0;
+    background-color: #333;
+    transition: 0.5s;
+}
+header .kinds .list .dropItems li
+{
+    margin-top: 5px;
+} 
+header .kinds .list .dropItems li a
+{
+	text-align: center;
+} 
+header .kinds .list .dropItems li a:hover
+{
+	color:black;
+    background: #ffde00;
+} 
+
+header .kinds .list:hover .dropItems {
+    opacity: 1;
+}
+ul
+{
+    list-style-type: none;
+}
+header .toggle
+{
+    position: absolute;
+    display: flex;
+    right: 0;
+} 
+header .toggle .item 
+{
+    position: relative;
+    right: 0;
+}
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 
 @media (max-width: 991px)
@@ -170,12 +284,129 @@ h1:hover{
 }
 }
 
+footer
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    color:#333;
+}
 
-  </style>
+footer .item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    cursor: default;
+}
+/*footer .item a 
+{
+    color: #fff;
+}*/
+footer .team img
+{
+    width: 50px;
+}
+
+footer  a{
+	transition:0.5s;
+}
+footer a:hover
+{
+   background-color: #ffde00;
+   transition:0.5s;
+   color:#333;
+}
+.rate{
+	color:white;
+	transition: 0.5s;
+}
+.rate:hover{
+	background: #ffde00;
+	color:#333;
+	transition: 0.5s
+}
+	
+	</style>
 </head>
 
 
 <body>
+  <header>
+        <div class=" part search">
+            <div class="box">
+            <img src="search.png" alt="search">
+            <input type="text" placeholder="Search here">
+        </div>
+        </div>
+        <div class="part kinds">
+            <div class="list study">
+                <h3>Study
+                    
+                </h3>
+                <div class="dropItems">
+                    <div class="arrow"></div>   
+                        <ul>
+                            <li><a href="schedule.html">schedules</a></li>
+                            <li><a href="course.html">Courses</a></li>
+                            <li><a href="exam.html">Exams</a></li>
+                            <li><a href="Ssupport.html">sopport</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="list useful">
+                <h3>Useful
+                    
+                </h3>
+                <div class="dropItems">
+                    <div class="arrow"> </div>
+                    <ul>
+                    <li><a href="law.html">Laws</a></li>
+                    <li><a href="link.html">Links</a></li>
+                    <li><a href="qoute.html">Qoutes</a></li>
+                    <li><a href="advice.html">Advices</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list tools">
+                <h3>Tools
+                    
+                </h3>
+                <div class="dropItems">
+                    <div class="arrow"></div>
+                        <ul>
+                            <li><a href="calculat.html">Calculator</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="list other">
+                <h3>Others
+                    
+                </h3>
+                <div class="dropItems">
+                    <div class="arrow"></div>
+                        <ul>
+                            <li><a href="hello.html">Hi</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div class="toggle">
+        <div class="item translate">
+            <img src="subject.png" alt="translate">
+        </div>
+        <div class="item mode">
+            <img src="night.png" alt="night mode">
+        </div>
+    </div>
+    </header>
  	
  		<div class="container">
 
@@ -264,6 +495,21 @@ h1:hover{
 
 
 
-
+ <footer>
+        <div class="item team">
+            <img src="fort.png" alt="team logo">
+            Siege
+        </div>
+        <div class="item Fsupp">
+        <ul>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">help</a></li>
+            <li><a href="#">bugs</a></li>
+        </ul>
+        </div>
+        <div class="item rate">
+            rate us
+        </div>
+    </footer>
 </body>
 </html>
