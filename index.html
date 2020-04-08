@@ -3,7 +3,7 @@
 <head>
 	<title>Courses</title>
 	<style>
-	*{
+		*{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
@@ -169,7 +169,7 @@ header
     height: 45px;
     display: flex;
     flex-direction: row;
-    width: 95vw;
+    
     z-index: 5;
 }
 header img
@@ -276,12 +276,13 @@ a
 
 
 
-@media (max-width: 991px)
+@media screen and (max-width: 991px)
 {
 .container {
 	grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 	grid-template-rows:minmax(auto, auto);
 }
+
 }
 
 footer
@@ -333,8 +334,8 @@ footer a:hover
 	color:#333;
 	transition: 0.5s
 }
-	
-	</style>
+
+	</style
 </head>
 
 
@@ -343,64 +344,66 @@ footer a:hover
         <div class=" part search">
             <div class="box">
             <img src="search.png" alt="search">
-            <input type="text" placeholder="Search here">
+            <input id="search" type="text" placeholder="">
         </div>
         </div>
         <div class="part kinds">
             <div class="list study">
-                <h3>Study
+                <h3 id="study">Study
                     
                 </h3>
                 <div class="dropItems">
                     <div class="arrow"></div>   
                         <ul>
-                            <li><a href="schedule.html">schedules</a></li>
-                            <li><a href="course.html">Courses</a></li>
-                            <li><a href="exam.html">Exams</a></li>
-                            <li><a href="Ssupport.html">sopport</a></li>
+                            <li><a id="study1" href="schedule.html">schedules</a></li>
+                            <li><a  id="study2" href="course.html">Courses</a></li>
+                            <li><a  id="study3" href="exam.html">Exams</a></li>
+                            <li><a  id="study4" href="Ssupport.html">sopport</a></li>
                         </ul>
                     </div>
             </div>
             <div class="list useful">
-                <h3>Useful
+                <h3 id="useful">Useful
                     
                 </h3>
                 <div class="dropItems">
                     <div class="arrow"> </div>
                     <ul>
-                    <li><a href="law.html">Laws</a></li>
-                    <li><a href="link.html">Links</a></li>
-                    <li><a href="qoute.html">Qoutes</a></li>
-                    <li><a href="advice.html">Advices</a></li>
+                    <li><a id="useful1" href="law.html">Laws</a></li>
+                    <li ><a id="useful2" href="link.html">Links</a></li>
+                    <li><a id="useful3" href="qoute.html">Qoutes</a></li>
+                    <li><a id="useful4" href="advice.html">Advices</a></li>
                     </ul>
                 </div>
             </div>
             <div class="list tools">
-                <h3>Tools
+                <h3 id="tools">Tools
                     
                 </h3>
                 <div class="dropItems">
                     <div class="arrow"></div>
                         <ul>
-                            <li><a href="calculat.html">Calculator</a></li>
+                            <li><a id="tools1" href="calculat.html">Calculator</a></li>
                         </ul>
                     </div>
             </div>
             <div class="list other">
-                <h3>Others
+                <h3 id="others">Others
                     
                 </h3>
                 <div class="dropItems">
                     <div class="arrow"></div>
                         <ul>
-                            <li><a href="hello.html">Hi</a></li>
+                            <li><a id="others1" href="hello.html">Hi</a></li>
                         </ul>
                     </div>
             </div>
         </div>
         <div class="toggle">
         <div class="item translate">
-            <img src="subject.png" alt="translate">
+          <img src="subject.png" alt="translate"><ul>
+         <li style="cursor: pointer;"><h3 onclick="eng()">English</h3><h3 onclick="fr()">Francais</h3></li>
+     </ul>
         </div>
         <div class="item mode">
             <img src="night.png" alt="night mode">
@@ -412,8 +415,8 @@ footer a:hover
 
  			<div class="box">
  				<div class="content">
- 					<h1><a href="">Introduction to domaine</a></h1>
- 					<p>know what are you going to study</p>
+ 					<h1><a id="intro" href="">Introduction into domaine</a></h1>
+ 					<p id="intro1">Know what are you going to study</p>
  				</div>
  			</div>
 
@@ -421,8 +424,8 @@ footer a:hover
  				<div class="content">
  					<h1>Licence 1</h1>
   					<p>
- 						<a href="">Semester01</a>
- 						<a href="">Semester02</a>
+ 						<a id="s1" href="">Semester01</a>
+ 						<a id="s2" href="">Semester02</a>
  					</p>
  				</div>
  			</div>
@@ -431,8 +434,8 @@ footer a:hover
  				<div class="content">
  					<h1>Licence 2</h1>
  					<p>
- 						<a href="">Semester03</a>
- 						<a href="">Semester04</a>
+ 						<a id="s3" href="">Semester03</a>
+ 						<a id="s4" href="">Semester04</a>
  					</p>
  				</div>
  			</div>
@@ -440,7 +443,7 @@ footer a:hover
  			<div class="box">
  				<div class="content">
  					<h1><a href="">Licence 3</a></h1>
- 					<p>here is some informations about specialities</p>
+ 					<p id="l3">Here is some informations about specialities</p>
  				</div>
  			</div>
 
@@ -448,8 +451,8 @@ footer a:hover
  				<div class="content">
  					<h1>SCI</h1>
  					<p>
- 						<a href="">Semester05</a>
- 						<a href="">Semester06</a>
+ 						<a id="SCIs5" href="">Semester05</a>
+ 						<a id="SCIs6" href="">Semester06</a>
  					</p>
  				</div>
  			</div>
@@ -458,8 +461,8 @@ footer a:hover
  				<div class="content">
  					<h1>SI</h1>
  					<p>
- 						<a href="">Semester05</a>
- 						<a href="">Semester06</a>
+ 						<a id="SIs5" href="">Semester05</a>
+ 						<a id="SIs6" href="">Semester06</a>
  					</p>
  				</div>
  			</div>
@@ -468,8 +471,8 @@ footer a:hover
  				<div class="content">
  					<h1>TI</h1>
  					<p>
- 						<a href="">Semester 05</a>
- 						<a href="">Semester 06</a>
+ 						<a id="TIs5" href="">Semester 05</a>
+ 						<a id="TIs6" href="">Semester 06</a>
  					</p>
  				</div>
  			</div>
@@ -478,21 +481,23 @@ footer a:hover
  				<div class="content">
  					<h1>GL</h1>
  					<p>
- 						<a href="">Semester05</a>
- 						<a href="">Semester06</a>
+ 						<a id="GLs5" href="">Semester05</a>
+ 						<a id="GLs6" href="">Semester06</a>
  					</p>
  				</div>
  			</div>
 
  			<div class="box">
  				<div class="content">
- 					<h1><a href="">external links</a></h1>
- 					<p>check here some useful links</p>
+ 					<h1><a id="links" href="">External links</a></h1>
+ 					<p id="linksp">Check here some useful links</p>
  				</div>
  			</div>
  		</div>
 
-	
+
+
+
  <footer>
         <div class="item team">
             <img src="fort.png" alt="team logo">
@@ -500,14 +505,97 @@ footer a:hover
         </div>
         <div class="item Fsupp">
         <ul>
-            <li><a href="#">contact us</a></li>
-            <li><a href="#">help</a></li>
-            <li><a href="#">bugs</a></li>
+            <li><a id="contact" href="#">Contact us</a></li>
+            <li><a id="help" href="#">Help</a></li>
+            <li><a id="bugs" href="#">Bugs</a></li>
         </ul>
         </div>
-        <div class="item rate">
-            rate us
+        <div id="rate" class="item rate">
+            Rate us
         </div>
     </footer>
+
+    <script>
+		function fr() {
+	document.getElementById('study1').innerHTML="Emplois";
+	document.getElementById('study2').innerHTML="Cours";
+	document.getElementById('study3').innerHTML="Examains";
+	document.getElementById('study4').innerHTML="Support";
+	document.getElementById('study').innerHTML="Etude";
+	document.getElementById('useful').innerHTML="Utile";
+	document.getElementById('useful1').innerHTML="Regles";
+	document.getElementById('useful2').innerHTML="Liens";
+	document.getElementById('useful3').innerHTML="Citations";
+	document.getElementById('useful4').innerHTML="Conseils";
+	document.getElementById('tools').innerHTML="Outils";
+	document.getElementById('tools1').innerHTML="Calculatrice";
+	document.getElementById('others').innerHTML="Autres";
+	document.getElementById('others1').innerHTML="Salut";
+	document.getElementById('intro').innerHTML="Introduction au domaine";
+	document.getElementById('intro1').innerHTML="faire connaissance de quoi vous allez etudier";
+	document.getElementById('s1').innerHTML="Semestre01";
+	document.getElementById('s2').innerHTML="Semestre02";
+	document.getElementById('s3').innerHTML="Semestre03";
+	document.getElementById('s4').innerHTML="Semestre04";
+	document.getElementById('SCIs5').innerHTML="Semestre05";
+	document.getElementById('SCIs6').innerHTML="Semestre06";
+	document.getElementById('SIs5').innerHTML="Semestre05";
+	document.getElementById('SIs6').innerHTML="Semestre06";
+	document.getElementById('TIs5').innerHTML="Semestre05";
+	document.getElementById('TIs6').innerHTML="Semestre06";
+	document.getElementById('GLs5').innerHTML="Semestre05";
+	document.getElementById('GLs6').innerHTML="Semestre06";
+	document.getElementById('l3').innerHTML="Ici quelques informations sur les specialitees";
+	document.getElementById('links').innerHTML="Liens externes";
+	document.getElementById('linksp').innerHTML="Quelques liens pour vous aider";
+	document.getElementById('contact').innerHTML="Contacter nous";
+	document.getElementById('help').innerHTML="Aide";
+	document.getElementById('bugs').innerHTML="Problemes";
+	document.getElementById('rate').innerHTML="Evaluer";
+	document.getElementById('search').innerHTML="Rechercher ici";
+
+
+
+}
+
+function eng() {
+	document.getElementById('study1').innerHTML="Schedules";
+	document.getElementById('study2').innerHTML="Courses";
+	document.getElementById('study3').innerHTML="Exams";
+	document.getElementById('study4').innerHTML="Support";
+	document.getElementById('study').innerHTML="Study";
+	document.getElementById('useful').innerHTML="Useful";
+	document.getElementById('useful1').innerHTML="Law";
+	document.getElementById('useful2').innerHTML="Links";
+	document.getElementById('useful3').innerHTML="Quoates";
+	document.getElementById('useful4').innerHTML="Advices";
+	document.getElementById('tools').innerHTML="Tools";
+	document.getElementById('tools1').innerHTML="Calculator	";
+	document.getElementById('others').innerHTML="Others";
+	document.getElementById('others1').innerHTML="Hi";
+	document.getElementById('intro').innerHTML="Introduction into domaine";
+	document.getElementById('intro1').innerHTML="Know what are you going to study";
+	document.getElementById('s1').innerHTML="Semester01";
+	document.getElementById('s2').innerHTML="Semester02";
+	document.getElementById('s3').innerHTML="Semester03";
+	document.getElementById('s4').innerHTML="Semester04";
+	document.getElementById('SCIs5').innerHTML="Semester05";
+	document.getElementById('SCIs6').innerHTML="Semester06";
+	document.getElementById('SIs5').innerHTML="Semester05";
+	document.getElementById('SIs6').innerHTML="Semester06";
+	document.getElementById('TIs5').innerHTML="Semester05";
+	document.getElementById('TIs6').innerHTML="Semester06";
+	document.getElementById('GLs5').innerHTML="Semester05";
+	document.getElementById('GLs6').innerHTML="Semester06";
+	document.getElementById('l3').innerHTML="Here is some informations about specialties";
+	document.getElementById('links').innerHTML="External links";
+	document.getElementById('linksp').innerHTML="Check here some useful links";
+	document.getElementById('contact').innerHTML="Contact us";
+	document.getElementById('help').innerHTML="Help";
+	document.getElementById('bugs').innerHTML="Bugs";
+	document.getElementById('rate').innerHTML="Rate us";
+	document.getElementById('search').innerHTML="Search here";
+}
+     </script>
 </body>
 </html>
